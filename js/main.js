@@ -22,22 +22,26 @@
 // Проверить чтобы все работало без ошибок
 
 
-let numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?');
 
-let personalMoviesDB = {
+const numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?');
+
+const personalMoviesDB = {
     count: numberOfFilms,
     movies: {},
     actors: {},
     genres: [],
     privat: false,
-}
+};
 
-let a = prompt('Какой фильм вы смотрели последний раз?');
-let b = +prompt('На сколько вы бы его оценили ?');
-let c = prompt('Какой фильм вы смотрели последний раз?');
-let d = +prompt('На сколько вы бы его оценили ?');
+const a = prompt('Какой фильм вы смотрели последний раз?');
+const b = prompt('На сколько вы бы его оценили ?');
+const c = prompt('Какой фильм вы смотрели последний раз?');
+const d = prompt('На сколько вы бы его оценили ?');
 
 personalMoviesDB.movies[a] = b;
 personalMoviesDB.movies[c] = d;
+
 console.log(`count: ${personalMoviesDB.count}`);
 console.log(personalMoviesDB.movies);
+
+//Я закончил
